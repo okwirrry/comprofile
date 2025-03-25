@@ -186,7 +186,7 @@ footer h6::after{
     .myfooter{
         width: 100%;
         font-size: small;
-        height:90px;
+   
         line-height:20px;
         padding:10px;
     }
