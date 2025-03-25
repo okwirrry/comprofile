@@ -1,7 +1,8 @@
 *{
-   box-sizing: border-box;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
     cursor: pointer;
     font-family: "Montserrat", sans-serif;
 
@@ -31,7 +32,7 @@
     opacity: 10%;
 }
 body{
-
+   width:100%;
    font-size: 16px;
 }
 .caption-body{
@@ -117,12 +118,13 @@ iframe{
     width: 100%;
 }
 footer{
-      background: #1c2335;
+    background: #1c2335;
     color:blue;
     padding:auto;
     padding: 30px;
-   width:100%;
- }
+ 
+   
+}
 footer ul li p{
     list-style-type: none;
     color: blue;
@@ -134,21 +136,19 @@ footer ul li a{
 footer h6{
     color: white;
 }
-.myfooter p{
+.myfooter{
     background-color: lightslategray;
     color: white;
     text-align: center;
     width: 100%;
-
-    padding: 20px;
-    font-size:15px;
-  
-    
+    height: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+    line-height: 10px;
     
 }
 footer ul li:hover{
     color: white;
-    padding:4px;
 }
 footer ul li a:hover{
     color: white;
@@ -173,31 +173,32 @@ footer h6::after{
     bottom: -5px;
     
 }
-.myfooter{
-    padding:10px;
-}
 @media only screen and (max-width: 600px){
-     body {
-        font-size: 14px; /* Slightly smaller font for better readability */
-    
+    .container{
+        width: 100%;
     }
-
+    .carousel{
+         width: 100%;
+         height: 50%;
+    }
+    .myfooter{
+        width: 100%;
+        font-size: small;
+    }
+}
 @media screen and (max-width: 767px) {
     body {
-        font-size: 15px; /* Slightly smaller font for better readability */
-    
+        font-size: 14px; /* Slightly smaller font for better readability */
     }
-   .myfooter p{
-    background-color: lightslategray;
-    color: white;
-    text-align: center;
-    width: 100%;
-  
-    padding: 10px;
-       font-size:1 rem
-   }
+    .container{
+        width: 100%;
+    }
+    .carousel-item img{
+         width: 100%;
+         height: 20%;
+    }
     .myfooter{
-        height:40px;
-  
+        width: 100%;
+        font-size: small;
+    }
 }
-   
