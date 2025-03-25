@@ -183,10 +183,7 @@ footer h6::after{
         font-size: 14px; /* Slightly smaller font for better readability */
     
     }
-   .container{
-      width:100%;
-    
-}
+
 @media screen and (max-width: 767px) {
     body {
         font-size: 15px; /* Slightly smaller font for better readability */
@@ -205,6 +202,4 @@ footer h6::after{
         height:40px;
   
 }
-   .container{
-      width:100%;
-   }
+   
