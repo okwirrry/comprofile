@@ -120,7 +120,7 @@ iframe{
 footer{
     background: #1c2335;
     color:blue;
-    padding:40px;
+    padding:10px;
 
     height:px;
  
@@ -145,7 +145,7 @@ footer h6{
     height: 30px;
     padding: 10px;
     box-sizing: border-box;
-    line-height: 10px;
+    
     
 }
 footer ul li:hover{
