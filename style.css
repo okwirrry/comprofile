@@ -122,7 +122,6 @@ footer{
     color:blue;
     padding:auto;
     padding: 30px;
-    
  
    
 }
@@ -145,8 +144,7 @@ footer h6{
     height: 30px;
     padding: 10px;
     box-sizing: border-box;
-    line-height: 20px;
-    font-size:15px;
+    line-height: 10px;
     
 }
 footer ul li:hover{
@@ -175,4 +173,32 @@ footer h6::after{
     bottom: -5px;
     
 }
-
+@media only screen and (max-width: 600px){
+    .container{
+        width: 100%;
+    }
+    .carousel{
+         width: 100%;
+         height: 50%;
+    }
+    .myfooter{
+        width: 100%;
+        font-size: small;
+    }
+}
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 14px; /* Slightly smaller font for better readability */
+    }
+    .container{
+        width: 100%;
+    }
+    .carousel-item img{
+         width: 100%;
+         height: 20%;
+    }
+    .myfooter{
+        width: 100%;
+        font-size: small;
+    }
+}
