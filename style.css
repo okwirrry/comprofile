@@ -185,5 +185,14 @@ footer h6::after{
     body {
         font-size: 15px; /* Slightly smaller font for better readability */
     }
-   
+   .myfooter p{
+    background-color: lightslategray;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+       font-size:1 rem
+   }
+  
 }
