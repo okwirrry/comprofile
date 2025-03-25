@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Company Profile</title>
+</head>
+<body>
+    <!-- As a heading -->
+  
+    <nav class="navbar nav-pills navbar-expand-lg  sticky-top bg-light"  id="nav2">
+      <div class="container-fluid">
+        <a class="navbar-brand p-2" href="#">Fredrick Graphics</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon bg-dark"></span>
+        </button>
+        <div class="collapse navbar-collapse navbarNav" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home-page">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about" >About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" >Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+<main data-bs-spy="scroll" data-bs-target="#nav2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+  <section>
+    <div class="home-page" id="home-page">
+    <div class="container-fluid carousel">
+     
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+       
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/flat-lay-workstation-with-copy-space-laptop.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              
+              <p>Yor Best Partner In Graphics Design</p>
+            <h1>Fredrick Graphics & Design</h1>
+             <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="margin: 10px;">
+  <i class="fa-solid fa-calendar-days"></i> Book Appoinment
+</button>
+
+<!-- Modal -->
+<div class="modal fade md" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="false">
+  <div class="modal-dialog md">
+    <div class="modal-content md">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body m-body">
+        <form action="" method="post" enctype="text/plain" id="modal_form">
+          <div class="row g-2">
+            <div class="col-md-6 col-sm-12">
+              <div class="input-group">
+                
+                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-envelope"></i></span>
+                <div class="form-floating">
+                  <input type="email" class="form-control" id="email2" placeholder="name@example.com" >
+                  <label for="email2">Email address</label>
+              
+                </div>
+
+                </div>
+                <div class="text-danger" id="emailerror"></div>
+              
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="input-group">
+                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-phone"></i></span>
+
+              <div class="form-floating">
+                
+                <input type="Tel" class="form-control" id="Phone" placeholder="07xxxxxxxx" >
+                <label for="Phone">Phone Number</label>
+           
+              </div>
+              </div>
+              <div class="text-danger" id="phoneerror"></div>
+            </div>
+            <div class="col-12">
+              <div class="form-floating">
+                <select class="form-select" id="services" aria-label="Floating label select example">
+                  <option selected>Select Services</option>
+                  <option value="1">Logo/Branding</option>
+                  <option value="2">Banner/Flyer</option>
+                  <option value="3">Company/profile</option>
+                </select>
+                <label for="services" >Works with selects</label>
+                <div class="text-danger" id="serviceserror"></div>
+              </div>
+              <button type="submit" class="btn btn-primary m-2" ><i class="fa-solid fa-paper-plane"></i>Send</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i>Close</button>
+    
+      </div>
+    </div>
+  </div>
+</div>
+            </div>
+          </div>
+          
+          <div class="carousel-item">
+            <img src="./images/electronic-device-surrounded-by-nature.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              
+              <p>Yor Best Partner In Graphics Design</p>
+            <h1>Fredrick Graphics & Design</h1>
+            </div>
+            
+            <!------starting modal-->
+            
+            <!---ending modal-->
+          </div>
+          <div class="carousel-item">
+            <img src="./images/minimalistic-home-desk-design.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              
+              <p>Yor Best Partner In Graphics Design</p>
+            <h1>Fredrick Graphics & Design</h1>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        
+      </div>
+    </div>
+  </div>
+    <div class="About-Us" id="about">
+     
+      
+    
+            
+              <h4 id="About-Us">About Us</h4>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-7   col-sm-12">
+                    <p>Hello! I'm Fredrick Odhiambo Okwiri, a passionate web developer and graphic designer with expertise in HTML, CSS,javascript and Bootstrap. I specialize in creating visually appealing and user-friendly websites that combine clean code with modern design principles.
+
+                      With a keen eye for aesthetics and functionality, I bring ideas to life through web development and graphic design. Whether it's building responsive websites or crafting compelling visuals, I focus on delivering seamless digital experiences.
+                      
+                      I am always eager to learn new technologies and stay updated with the latest industry trends to create innovative and efficient solutions.
+                      
+                      Let’s work together to bring your vision to life!</p>
+                      <div class="icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                     
+                      </div>
+
+                  </div>
+                  <div class="col-md-5 col-sm-12">
+                       <img src="./images/close-up-image-programer-working-his-desk-office.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+                  
+            
+          </div>
+        </div>
+      
+    </div>
+    
+  </section>
+  <div class="services" id="services"> 
+  
+      <h4 id="About-Us">Our Services</h4>
+      <div class="container">
+        <div class="row g-4 my-2">
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4 text-center h-100">
+            <div class="card h-100 shadow border-0 ">
+              <div class="card-body">
+                <i class="fa-solid fa-web-awesome"></i>
+                <h5 class="card-title">Web Design</h5>
+                
+                <p class="card-text">We offer a full range of web design solutions to help businesses create a strong online presence. Whether you're launching a new website or revamping an existing one, we ensure a seamless, visually stunning, and high-performing site.</p>
+                <p><b>Price from ksh 15,000</b></p>
+               
+                
+                
+  
+              
+              </div>
+            </div>
+  
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4 text-center h-100" id="card">
+            <div class="card h-100 shadow border-0  ">
+              <div class="card-body">
+                <i class="fa-solid fa-gears"></i>
+                <h5 class="card-title">UI/UX DESIGN</h5>
+                
+                <p class="card-text">Great design isn’t just about aesthetics—it’s about delivering an intuitive and engaging user experience. Our UI/UX design services focus on creating seamless, user-friendly, and visually appealing interfaces that enhance user interaction and drive conversions.</p>
+                <p><b>Price from ksh 15,000</b></p>
+                
+
+          </div>
+        </div>
+      </div>
+      
+
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4 text-center ">
+          <div class="card h-100 shadow border-0  ">
+            <div class="card-body">
+              <i class="fa-brands fa-phoenix-framework"></i>
+              <h5 class="card-title">Graphic Design</h5>
+              
+              <p class="card-text">Great design is more than just visuals—it’s about storytelling, branding, and making a lasting impression. We create stunning, high-quality designs that elevate your brand and communicate your message effectively.</p>
+              <p><b>Price from ksh 15,000</b></p>
+             
+
+      
+      </div>
+    </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4 text-center" id="card">
+        <div class="card h-100 shadow border-0 ">
+          <div class="card-body">
+            <i class="fa-sharp-duotone fa-regular fa-handshake"></i>
+            <h5 class="card-title">SEO</h5>
+            
+            <p class="card-text">A beautifully designed website is only effective if people can find it. Our SEO services help improve your search rankings, drive organic traffic, and increase your online visibility. We use proven strategies to get your business in front of the right audience</p>
+            <p><b>Price from ksh 15,000</b></p>
+            
+
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12 mb-4 text-center  my-card">
+    <div class="card h-100 shadow border-0 ">
+      <div class="card-body">
+        <i class="fa-solid fa-wand-magic-sparkles"></i>
+        <h5 class="card-title">Video Editing</h5>
+        
+        <p class="card-text">Videos are one of the most powerful ways to engage, inform, and inspire. Our professional video editing services help you create high-quality, visually stunning videos that leave a lasting impact. Whether it's for social media, marketing, or corporate use, we bring your raw footage to life.</p>
+        <p><b>Price from ksh 10,000</b></p>
+      
+
+  </div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12 mb-4 text-center">
+  <div class="card h-100 shadow border-0  " >
+    <div class="card-body">
+      <i class="fa-brands fa-phoenix-squadron"></i>
+      <h5 class="card-title">Google ads</h5>
+      
+      <p class="card-text">Want instant visibility on Google? Our Google Ads services help you reach your target audience, drive quality traffic, and generate more leads. We create and manage high-performing ad campaigns to ensure the best return on investment (ROI).</p>
+      <p><b>Price from ksh 10,000</b></p>
+    
+
+</div>
+</div>
+</div>
+      
+
+    </div>
+   
+      <div class="contact" id="contact">
+        <h4 id="About-Us">Our Contact</h4>
+        <div class="row g-2 mb-4">
+          
+          <div class="col-md-5 col-sm-12"  >
+            <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1018956.4744425206!2d38.81137822628126!3d-3.9587367975110945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ske!4v1742826025980!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+          <div class="col-md-7 col-sm-12">
+           <form  id="myform" action="#" method="post" enctype="text/plain">
+            <div class="row g-3 p-2" >
+              <h6 style="text-align: center;">Fill in your details</h6>
+              <div class="col-md-6 col-sm-12">
+              
+                <div class="form-floating">
+                  <input type="text" class="form-control" placeholder="First name" id="firstname">
+               
+                  <label for="firstname">First Name</label>
+                  <div class="text-danger" id="firstnameerror"></div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="form-floating">
+                  <input type="text" class="form-control"  placeholder="Second Name" id="secondname">
+                  <label for="secondname">Second Name</label>
+                  <div class="text-danger" id="secondnameerror"></div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-floating">
+                  <input type="email" class="form-control"  placeholder="name@example.com" id="email">
+                  <label for="email">Email address</label>
+                  <div class="text-danger" id="emailerror"></div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-floating">
+                  <input type="tel" class="form-control" placeholder="07xxxxxxx" id="tel">
+                  <label for="tel">Phone Number</label>
+                  <div class="text-danger" id="telerror"></div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-floating">
+                  <textarea class="form-control"  placeholder="Leave a comment here" id="textarea" style="height: 100px"></textarea>
+                  <label for="textarea">Leave a comment here</label>
+                  <div class="text-danger" id="textareaerror"></div>
+                </div>
+              </div>
+             
+           
+              <button type="submit" class="btn btn-primary m-2 width-40" ><i class="fa-solid fa-paper-plane"></i>Send</button>
+           </form>
+          </div>
+        </div>
+
+      </div>
+      
+
+    </div>
+    
+
+  </div>
+  <footer>
+    <div class="container-fluid">
+      <div class="row mb-4">
+        <div class="col-md-3 col-sm-12">
+          <h6>Fredrick Graphics</h6>
+          <p> Fredrick Graphics Design Company is a creative agency dedicated to delivering innovative and visually striking design solutions. Founded by Fredrick Odhiambo Okwiri, a skilled graphic designer and web developer, the company specializes in branding, web design, and digital marketing assets tailored to help businesses stand out.
+
+           
+        </div>
+        <div class="col-md-3 col-sm-12">
+          <h6>Useful links</h6>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home-page">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about" >About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" >Contact</a>
+            </li>
+          </ul>
+          
+        </div>
+        <div class="col-md-3 col-sm-12">
+          <h6>Services</h6>
+          <ul style="list-style-type: none; color: blue;" >
+           <li>Web Development</li>
+           <li>Web design</li>
+           <li>SEO</li>
+           <li>Google ads</li>
+           <li>Graphics Design</li>
+          </ul>
+          
+        </div>
+        <div class="col-md-3 col-sm-12 l-0">
+          <h6>Contact </h6>
+          <ul>
+          <li><a href=""><i class="fa-solid fa-house"></i>P.0 B0X 800-800 Mombasa</a></li>
+          <li><a href=""><i class="fa-solid fa-phone-volume"></i>0792451891</a></li> 
+          <li><a href=""><i class="fa-solid fa-envelope"></i>fredrickokwi@gmail.com</a></li>
+        </ul>
+       
+        </div>
+        
+      </div>
+     
+    </div>
+    <div class="myfooter">
+      <p>&copy; 2025 | All Rights Reserved.WEBSITE DESIGNED BY FREDRICK OKWIRI</p>
+    </div>
+   
+  </footer>
+  <div class="container-fluid">
+   
+   
+  </div>
+</main>
+<script src="./validation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    
+</body>
+
+</html>

@@ -1,0 +1,204 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+
+    
+
+}
+
+#navbarNav{
+ line-height: 10px;
+ justify-content:right;
+ text-align: center;
+ margin: 0 30px;
+ text-transform: uppercase;
+
+}
+
+#navbarNav .nav-item .nav-link{
+    
+}
+.carousel-inner .carousel-item img{
+    height: 80vh;
+    filter:brightness(50%);
+    object-fit: cover;
+}
+.section{
+    height: 50vh;
+    opacity: 10%;
+}
+body{
+   width:100%;
+   font-size: 16px;
+}
+.caption-body{
+   padding: 30px;
+}
+i{
+    padding: 5px;
+}
+#basic-addon1{
+  background-color: orange;
+}
+.md{
+    margin-top: 50px;
+}
+.carousel-caption{
+   justify-content: center;
+   top: 100px;
+}
+.About-Us img{
+    width: 100%;
+    height: 100%;
+    border-radius:20px;
+    
+}
+#About-Us{
+    justify-content: center;
+    text-align: center;
+    line-height: 10px;
+    text-transform: uppercase;
+   margin: 15px 0px;
+    padding: 10px;
+    position: relative;
+    background-color: lightblue;
+    width: 100%;
+    font-size: 20px;
+}
+.About-Us p{
+   
+    padding: 10px;
+}
+.About-Us i{
+    font-size: 30px;
+    color: orangered;
+  
+}
+.About-Us a{
+  
+    
+}
+.About-Us i:hover{
+    color: blue;
+    transition: ease-in .5s;
+}
+.navbarNav ul li:hover{
+  color: orangered;
+}
+.card i{
+    color:green;
+    font-size: 45px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.card{
+    justify-content: center;
+    align-items: center;
+    line-height: auto;
+   border: none;
+   background-color: #1c2335;
+}
+.card h5{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.card:hover{
+    background-color: rgba(13, 13, 194, 0.767);
+    color:white;
+    transition:  all 0.5s;
+    overflow: none;
+    transform: translateY(0.9);
+}
+iframe{
+    width: 100%;
+}
+footer{
+    background: #1c2335;
+    color:blue;
+    padding:auto;
+    padding: 30px;
+ 
+   
+}
+footer ul li p{
+    list-style-type: none;
+    color: blue;
+}
+footer ul li a{
+    text-decoration: none;
+    color: blue;
+}
+footer h6{
+    color: white;
+}
+.myfooter{
+    background-color: lightslategray;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+    line-height: 10px;
+    
+}
+footer ul li:hover{
+    color: white;
+}
+footer ul li a:hover{
+    color: white;
+}
+ul li{
+    list-style-type: none;
+}
+footer i{
+    padding: auto;
+    margin: auto;
+}
+footer h6{
+    position: relative;
+}
+footer h6::after{
+    content: '';
+    width: 50%;
+    height: 2px;
+    background-color: orange;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    
+}
+@media only screen and (max-width: 600px){
+    .container{
+        width: 100%;
+    }
+    .carousel{
+         width: 100%;
+         height: 50%;
+    }
+    .myfooter{
+        width: 100%;
+        font-size: small;
+    }
+}
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 14px; /* Slightly smaller font for better readability */
+    }
+    .container{
+        width: 100%;
+    }
+    .carousel-item img{
+         width: 100%;
+         height: 20%;
+    }
+    .myfooter{
+        width: 100%;
+        font-size: small;
+    }
+}
