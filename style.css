@@ -181,7 +181,7 @@ footer h6::after{
 @media only screen and (max-width: 600px){
      body {
         font-size: 14px; /* Slightly smaller font for better readability */
-        width:100%;
+    
     }
    .container{
       width:100%;
@@ -190,7 +190,7 @@ footer h6::after{
 @media screen and (max-width: 767px) {
     body {
         font-size: 15px; /* Slightly smaller font for better readability */
-       width:100%;
+    
     }
    .myfooter p{
     background-color: lightslategray;
