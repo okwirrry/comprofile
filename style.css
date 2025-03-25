@@ -117,14 +117,11 @@ iframe{
     width: 100%;
 }
 footer{
-    background: #1c2335;
+      background: #1c2335;
     color:blue;
-    padding:10px;
- 
-
- 
-   
-}
+    padding:auto;
+    padding: 30px;
+ }
 footer ul li p{
     list-style-type: none;
     color: blue;
