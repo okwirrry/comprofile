@@ -121,6 +121,7 @@ footer{
     color:blue;
     padding:auto;
     padding: 30px;
+   width:100%;
  }
 footer ul li p{
     list-style-type: none;
