@@ -176,6 +176,9 @@ footer h6::after{
     bottom: -5px;
     
 }
+.myfooter{
+    padding:10px;
+}
 @media only screen and (max-width: 600px){
      body {
         font-size: 14px; /* Slightly smaller font for better readability */
