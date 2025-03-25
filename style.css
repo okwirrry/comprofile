@@ -184,6 +184,7 @@ footer h6::after{
     .myfooter{
         width: 100%;
         font-size: small;
+        height:40px;
     }
 }
 @media screen and (max-width: 767px) {
@@ -195,10 +196,11 @@ footer h6::after{
     }
     .carousel-item img{
          width: 100%;
-         height: 20%;
+         height: 20%%;
     }
     .myfooter{
         width: 100%;
         font-size: small;
+        height: 40px;
     }
 }
