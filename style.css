@@ -188,6 +188,16 @@ footer h6::after{
         font-size: small;
         height:90px;
     }
+    .myfooter p{
+    background-color: lightslategray;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    padding: 15px;
+    box-sizing: border-box;
+    line-height: 20px;
+    
 }
 @media screen and (max-width: 767px) {
     body {
@@ -202,7 +212,7 @@ footer h6::after{
     }
     .myfooter{
         width: 100%;
-        font-size: small;
+        font-size:auto;
         height: 40px;
     }
 }
