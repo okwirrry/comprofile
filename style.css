@@ -181,7 +181,7 @@ footer h6::after{
          width: 100%;
          height: 50%;
     }
-    .myfooter{
+    .myfooter p{
         width: 100%;
         font-size: small;
         height:90px;
@@ -198,7 +198,7 @@ footer h6::after{
          width: 100%;
          height: 20%%;
     }
-    .myfooter{
+    .myfooter p{
         width: 100%;
         font-size: small;
         height: 80px;
