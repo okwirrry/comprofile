@@ -120,8 +120,8 @@ iframe{
 footer{
     background: #1c2335;
     color:blue;
-    padding:auto;
-    padding: 20px;
+    padding:10px;
+
     height:400px;
  
    
@@ -187,6 +187,8 @@ footer h6::after{
         width: 100%;
         font-size: small;
         height:90px;
+        line-height:20px;
+        padding:10px;
     }
     .myfooter p{
     background-color: lightslategray;
@@ -214,5 +216,7 @@ footer h6::after{
         width: 100%;
         font-size:auto;
         height: 40px;
+         line-height:20px;
+        padding:10px;
     }
 }
