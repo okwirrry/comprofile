@@ -1,5 +1,7 @@
 *{
-   
+   box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     cursor: pointer;
     font-family: "Montserrat", sans-serif;
 
@@ -179,12 +181,16 @@ footer h6::after{
 @media only screen and (max-width: 600px){
      body {
         font-size: 14px; /* Slightly smaller font for better readability */
+        width:100%;
     }
+   .container{
+      width:100%;
     
 }
 @media screen and (max-width: 767px) {
     body {
         font-size: 15px; /* Slightly smaller font for better readability */
+       width:100%;
     }
    .myfooter p{
     background-color: lightslategray;
@@ -199,3 +205,6 @@ footer h6::after{
         height:40px;
   
 }
+   .container{
+      width:100%;
+   }
