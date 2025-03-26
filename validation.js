@@ -8,11 +8,11 @@ document.getElementById('myform').addEventListener('submit', function Validation
 let Firstname=document.getElementById('firstname');
 let Secondname=document.getElementById('secondname');
 let tel=document.getElementById('tel');
-let Email=document.getElementById('Email');
+let Email=document.getElementById('email');
 let textarea=document.getElementById('textarea');
 let firstnameerror=document.getElementById('firstnameerror');
 let secondnameerror=document.getElementById('secondnameerror');
-let Emailerror=document.getElementById('Emailerror');
+let emailerror=document.getElementById('emailerror');
 let telerror=document.getElementById('telerror');
 let textareaerror=document.getElementById('textareaerror');
 let fnamepattern=/^[A-Z][a-zA-Z'-]{1,}$/;
