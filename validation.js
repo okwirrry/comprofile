@@ -8,11 +8,11 @@ document.getElementById('myform').addEventListener('submit', function Validation
 let Firstname=document.getElementById('firstname');
 let Secondname=document.getElementById('secondname');
 let tel=document.getElementById('tel');
-let email=document.getElementById('email');
+let Email=document.getElementById('Email');
 let textarea=document.getElementById('textarea');
 let firstnameerror=document.getElementById('firstnameerror');
 let secondnameerror=document.getElementById('secondnameerror');
-let emailerror=document.getElementById('emailerror');
+let Emailerror=document.getElementById('Emailerror');
 let telerror=document.getElementById('telerror');
 let textareaerror=document.getElementById('textareaerror');
 let fnamepattern=/^[A-Z][a-zA-Z'-]{1,}$/;
@@ -48,11 +48,11 @@ if (Secondname.value.trim() === "") {
 else{
     secondnameerror.textContent="";
 }
-if(email.value.trim() === ""){
-    emailerror.textContent="Email is required!";
+if(Email.value.trim() === ""){
+    Emailerror.textContent="Email is required!";
    isvalid= false;
 }
-else if(!emailpattern.test(email.value.trim())){
+else if(!emailpattern.test(Email.value.trim())){
     emailerror.textConten="Enter Email Address!"
 }
 else{
