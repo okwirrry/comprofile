@@ -117,6 +117,11 @@ i{
 iframe{
     width: 100%;
 }
+input{
+background-color:green;
+    opacity:0.1;
+
+}
 footer{
     background: #1c2335;
     color:blue;
