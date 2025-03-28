@@ -87,7 +87,7 @@ else{
         emailerror.textContent = "";
         telerror.textContent = "";
         textareaerror.textContent = "";
-    }, 5000);w
+    }, 50000);w
     });
 
 document.getElementById('modal_form').addEventListener('submit',function valid(e){
@@ -126,7 +126,7 @@ if(services.selectedIndex===0){
         emailerror.textContent = "";
         phoneerror.textContent = "";
         serviceserror.textContent = "";
-    }, 5000);
+    }, 50000);
    
 if(isvalid){
     this.submit();
