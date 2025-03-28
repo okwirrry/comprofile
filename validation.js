@@ -80,7 +80,14 @@ else{
 }
   if(isvalid){
     this.submit;
-  }
+  } 
+    setTimeout(() => {
+        firstnameerror.textContent = "";
+        secondnameerror.textContent = "";
+        emailerror.textContent = "";
+        telerror.textContent = "";
+        textareaerror.textContent = "";
+    }, 5000);w
     });
 
 document.getElementById('modal_form').addEventListener('submit',function valid(e){
@@ -115,6 +122,12 @@ if(services.selectedIndex===0){
 }else{
     serviceserror.textContent='';
 }
+    setTimeout(() => {
+        emailerror.textContent = "";
+        phoneerror.textContent = "";
+        serviceserror.textContent = "";
+    }, 5000);
+   
 if(isvalid){
     this.submit();
 }
